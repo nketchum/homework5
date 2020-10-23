@@ -231,8 +231,8 @@ header{
 
 /*Your code here again.*/
 /*Add media query to handle reduced-motion*/
-@media (prefers-reduced-motion) {
+@media (prefers-reduced-motion: reduce) {
   #logo {
-    animation-name: logo_wiggle;
+    animation: none;
   }
 }
