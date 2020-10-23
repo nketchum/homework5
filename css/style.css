@@ -83,6 +83,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -161,6 +162,8 @@ header{
 
 .nav_links{
   /*Your code here again.*/
+  display: flex;
+  flex-direction: column;
 }
 
 .nav_item a{
@@ -198,6 +201,7 @@ header{
   .nav_links{
     /*Your code here again.*/
     display: flex;
+    flex-direction: row;
   }
 
   .nav_item a{
@@ -227,3 +231,8 @@ header{
 
 /*Your code here again.*/
 /*Add media query to handle reduced-motion*/
+@media (prefers-reduced-motion) {
+  #logo {
+    animation-name: logo_wiggle;
+  }
+}
